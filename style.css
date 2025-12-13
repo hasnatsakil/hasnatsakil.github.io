@@ -19,10 +19,11 @@ h1, h2, h3 {
   font-weight: 600;
 }
 
-.hero {
-  min-height: 100vh;
-  background: linear-gradient(135deg, #111, #1a1a1a);
+.hero-content {
+  margin: auto 0;
+  max-width: 700px;
 }
+
 
 nav {
   display: flex;
@@ -109,3 +110,4 @@ footer {
   background: #000;
   color: #777;
 }
+
