@@ -128,6 +128,29 @@ export default function Skills() {
           <ToolItem icon={<Code className="w-6 h-6" />} name="VS Code" index={5} />
         </div>
       </section>
+
+      {/* CTA Section */}
+      <section className="relative z-10 rounded-full overflow-hidden p-12 text-center bg-surface-container-high border border-outline-variant/10 shadow-2xl">
+        <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-secondary/10 pointer-events-none"></div>
+        <h2 className="text-4xl md:text-5xl font-black tracking-tighter mb-6">Need These Skills in Your Project?</h2>
+        <p className="text-on-surface-variant max-w-xl mx-auto mb-10 leading-relaxed">
+          Available for high-stakes engineering roles, architectural consulting, or custom AI solutions. Let&apos;s build something extraordinary together.
+        </p>
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <a
+            className="bg-gradient-to-r from-primary to-secondary text-on-primary-fixed px-10 py-4 rounded-full font-bold text-lg hover:shadow-[0_0_30px_rgba(83,221,252,0.3)] transition-all"
+            href="#"
+          >
+            Hire Me Now
+          </a>
+          <a
+            className="bg-surface-container-highest border border-outline-variant/20 text-on-surface px-10 py-4 rounded-full font-bold text-lg hover:bg-surface-bright transition-all"
+            href="#"
+          >
+            View Projects
+          </a>
+        </div>
+      </section>
     </main>
   );
 }

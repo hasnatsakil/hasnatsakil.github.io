@@ -167,6 +167,22 @@ export default function Stack() {
           </div>
         </motion.section>
       </div>
+
+      {/* CTA Section */}
+      <section className="mt-32 p-12 md:p-24 bg-surface-container-highest rounded-xl text-center relative overflow-hidden border border-white/5">
+        <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-secondary/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div className="relative z-10">
+          <h2 className="font-headline text-4xl md:text-6xl font-extrabold mb-8 tracking-tighter">Want me to use this stack for your project?</h2>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+            <button className="w-full sm:w-auto px-12 py-5 bg-gradient-to-r from-primary to-secondary text-on-primary-fixed font-headline font-black text-lg rounded-xl hover:scale-105 transition-transform shadow-lg shadow-secondary/20">
+              Hire Me
+            </button>
+            <button className="w-full sm:w-auto px-12 py-5 bg-surface-container-lowest border border-outline-variant/15 text-on-surface font-headline font-bold text-lg rounded-xl hover:bg-surface-bright transition-colors">
+              View Projects
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
