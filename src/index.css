@@ -105,3 +105,15 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.text-gradient {
+  background: linear-gradient(135deg, #85adff 0%, #53ddfc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-effect {
+  background: rgba(30, 38, 53, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(66, 72, 84, 0.15);
+}

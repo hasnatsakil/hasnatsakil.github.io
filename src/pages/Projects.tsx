@@ -67,7 +67,7 @@ export default function Projects() {
           transition={{ delay: 0.1 }}
           className="text-6xl md:text-8xl font-black tracking-tighter leading-[0.9] mb-8 font-headline"
         >
-          Selected <span className="text-gradient">Architectures</span>
+          Selected <span className="gradient-text">Architectures</span>
         </motion.h1>
         <motion.p 
           initial={{ opacity: 0, y: 20 }}
@@ -84,7 +84,7 @@ export default function Projects() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
-          className="flex flex-wrap justify-center items-center gap-3 p-2 bg-surface-container-low/50 glass-effect rounded-2xl border border-outline-variant/15 max-w-fit mx-auto"
+          className="flex flex-wrap justify-center items-center gap-3 p-2 bg-surface-container-low/50 glass-card rounded-2xl border border-outline-variant/15 max-w-fit mx-auto"
         >
           {categories.map((cat) => (
             <button
