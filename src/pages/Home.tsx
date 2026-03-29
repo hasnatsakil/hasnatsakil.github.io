@@ -94,9 +94,9 @@ export default function Home() {
         >
           <div className="glass-card p-4 rounded-2xl relative z-10 overflow-hidden aspect-square flex items-center justify-center">
             <img
-              alt="Architecture Visual"
+              alt="Hasnat Sakil - Full Stack AI & DevOps Engineer"
               className="w-full h-full object-cover rounded-xl opacity-80"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhvipOVcTzcOtOFhxZopqqzXtS3Jl9UzWAmakjh1Yyt35dztJ-PHWHOtRjH_FZMjZDTTaQCQLwVpTE_bSDZ2JKtwQC1PXRXQdSUMgp_Rmt4cWR6CKDl1BnfIKsw3XjTtduEjbM5mSn6l2PKbXMrprx2X5uUz9zqgpI8CdpPICQktYYCIYHpQihkbkH-Jf5s4LTiAdwZr1Bi5Lj2pNHwKuyhT_yAb2k8KPEHrnRbzR-lXyexbyOdSbD0lcTIxbIwo_jyDzzWhDhATw"
+              src="/images/da07b0ee-60c7-4117-863d-fa85f9933951-removebg-preview.png"
               referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent opacity-60"></div>
