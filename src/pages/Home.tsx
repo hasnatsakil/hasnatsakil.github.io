@@ -90,13 +90,13 @@ export default function Home() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-          className="relative"
+          className="relative hidden md:block"
         >
           <div className="glass-card p-4 rounded-2xl relative z-10 overflow-hidden aspect-square flex items-center justify-center">
             <img
-              alt="Hasnat Sakil - Full Stack AI & DevOps Engineer"
+              alt="Architecture Visual"
               className="w-full h-full object-cover rounded-xl opacity-80"
-              src="/images/profile.png"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhvipOVcTzcOtOFhxZopqqzXtS3Jl9UzWAmakjh1Yyt35dztJ-PHWHOtRjH_FZMjZDTTaQCQLwVpTE_bSDZ2JKtwQC1PXRXQdSUMgp_Rmt4cWR6CKDl1BnfIKsw3XjTtduEjbM5mSn6l2PKbXMrprx2X5uUz9zqgpI8CdpPICQktYYCIYHpQihkbkH-Jf5s4LTiAdwZr1Bi5Lj2pNHwKuyhT_yAb2k8KPEHrnRbzR-lXyexbyOdSbD0lcTIxbIwo_jyDzzWhDhATw"
               referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent opacity-60"></div>
