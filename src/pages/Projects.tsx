@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Eye, ArrowRight, BarChart3, Shield, Terminal, Filter } from "lucide-react";
-import { motion, AnimatePresence } from "motion/react";
+import { motion } from "motion/react";
 
 const projects = [
   {
@@ -51,7 +51,7 @@ export default function Projects() {
     : projects.filter(p => p.category === activeCategory);
 
   return (
-    <div className="antialiased selection:bg-primary/30 selection:text-white">
+    <div className="antialiased selection:bg-primary/30 selection:text-white pt-24 pb-24 min-h-screen text-on-surface">
       <header className="max-w-7xl mx-auto px-8 pt-24 pb-16 text-center">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -103,15 +103,15 @@ export default function Projects() {
       </section>
 
       <main className="max-w-7xl mx-auto px-8 pb-32">
-        <motion.div 
-          layout
+        <motion.div
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.35, ease: "easeOut" }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
-          <AnimatePresence mode="popLayout">
-            {filteredProjects.map(project => (
-              <ProjectCard key={project.id} {...project} />
-            ))}
-          </AnimatePresence>
+          {filteredProjects.map(project => (
+            <ProjectCard key={project.id} {...project} />
+          ))}
         </motion.div>
       </main>
     </div>
