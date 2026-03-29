@@ -90,7 +90,7 @@ export default function Home() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-          className="relative hidden md:block"
+          className="relative"
         >
           <div className="glass-card p-4 rounded-2xl relative z-10 overflow-hidden aspect-square flex items-center justify-center">
             <img
