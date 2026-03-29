@@ -96,7 +96,7 @@ export default function Home() {
             <img
               alt="Hasnat Sakil - Full Stack AI & DevOps Engineer"
               className="w-full h-full object-cover rounded-xl opacity-80"
-              src="/images/da07b0ee-60c7-4117-863d-fa85f9933951-removebg-preview.png"
+              src="/images/profile.png"
               referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent opacity-60"></div>
@@ -143,7 +143,7 @@ export default function Home() {
                 <img
                   alt="Professional portrait of Abul Hasnat Sakil"
                   className="w-full h-full object-cover rounded-2xl"
-                  src="https://lh3.googleusercontent.com/aida/ADBb0uihmdTEde8Jqz8CPqnQablHLWIwWT22MwU2o7uV-J6zHTAyUdqz299g67MSAHfC6PIWq2z9RDAugOWJmb4ZGonASFhneBlAkMMAF5Yy22fqeNmxKQIRT9gZ5j0VBE4gRHmVk06NFQCKPkuJWlEx3Ha1f4UKIu-FCMYlF-XdGqIsSVKoDP4lDGLXem5BQ6zRrjuTqZ4uY1uOcZtfetR8mYJThqCQ8F6zvXlkTdJLShclWfanXsW7Be_Cwvg--rsS-e18FT3CkVspzw"
+                  src="/images/profile.png"
                   referrerPolicy="no-referrer"
                 />
               </div>
