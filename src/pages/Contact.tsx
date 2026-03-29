@@ -110,7 +110,7 @@ export default function Contact() {
         <div className="lg:col-span-5 space-y-6">
           {/* Quick Contact Bento */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <ContactInfoItem icon={<Mail className="w-5 h-5" />} label="Email" value="abulhasnat.sakil@gmail.com" index={0} />
+            <ContactInfoItem icon={<Mail className="w-5 h-5" />} label="Email" value="abulhasnatsakil.cu@gmail.com" index={0} />
             <ContactInfoItem icon={<MapPin className="w-5 h-5" />} label="Location" value="Dhaka, Bangladesh" index={1} />
           </div>
 

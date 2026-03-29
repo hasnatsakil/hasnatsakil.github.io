@@ -393,13 +393,13 @@ export default function Home() {
               <h3 className="text-5xl font-headline font-black mb-8 leading-tight">Let’s Build Something <span className="gradient-text">Powerful</span></h3>
               <p className="text-lg text-on-surface-variant mb-12">I'm currently open to freelance projects, research collaborations, and full-time opportunities with impact-driven teams.</p>
               <div className="space-y-6">
-                <a href="mailto:abulhasnat.sakil@gmail.com" className="flex items-center gap-4 group">
+                <a href="mailto:abulhasnatsakil.cu@gmail.com" className="flex items-center gap-4 group">
                   <div className="w-12 h-12 rounded-xl glass-card flex items-center justify-center group-hover:bg-primary-container group-hover:text-on-primary-container transition-all">
                     <Mail className="w-6 h-6" />
                   </div>
                   <div>
                     <p className="text-xs font-label uppercase text-on-surface-variant">Email me</p>
-                    <p className="font-bold">abulhasnat.sakil@gmail.com</p>
+                    <p className="font-bold">abulhasnatsakil.cu@gmail.com</p>
                   </div>
                 </a>
                 <div className="flex items-center gap-4 group">
