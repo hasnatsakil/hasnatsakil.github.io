@@ -1,22 +1,20 @@
-# Abul Hasnat Sakil — Portfolio
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-Modern personal portfolio website showcasing my work as an AI Engineer.
+# Run and deploy your AI Studio app
 
-## 🔗 Live Website
-https://hasnatsakil.github.io/
+This contains everything you need to run your app locally.
 
-## 🧠 Focus Areas
-- AI Engineering & LLM Systems
-- RAG Pipelines
-- Computer Vision
-- Backend & Cloud Deployment
+View your app in AI Studio: https://ai.studio/apps/c6fa6f77-4d0e-438f-8ae5-33a17e72b385
 
-## 🛠 Tech Stack
-- HTML, CSS
-- Python, FastAPI
-- Docker, Azure
+## Run Locally
 
-## 📬 Contact
-- Email: your-email@gmail.com
-- GitHub: https://github.com/hasnatsakil
-- LinkedIn: https://linkedin.com/in/your-link
+**Prerequisites:**  Node.js
+
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
