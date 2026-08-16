@@ -54,7 +54,7 @@ Welcome to my personal portfolio repository! Built with React 19, TypeScript, Vi
 3. **Configure Environment Variables**:
    Create a `.env` file in the root directory (based on `.env.example`):
    ```env
-   VITE_WEB3FORMS_KEY="b02721a4-c07d-4711-81cc-5e3f9a481658"
+   VITE_WEB3FORMS_KEY="YOUR_WEB3FORMS_ACCESS_KEY"
    GEMINI_API_KEY="YOUR_GEMINI_API_KEY_OPTIONAL"
    ```
 

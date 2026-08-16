@@ -34,7 +34,7 @@ export default function Contact() {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: import.meta.env.VITE_WEB3FORMS_KEY || "b02721a4-c07d-4711-81cc-5e3f9a481658",
+          access_key: import.meta.env.VITE_WEB3FORMS_KEY || "",
           name: formData.name,
           email: formData.email,
           subject: `[Portfolio Inquiry] ${formData.subject}`,
