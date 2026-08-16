@@ -88,7 +88,7 @@ export default function Services() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="w-full max-w-2xl text-center glass-panel p-10 rounded-full border border-outline-variant/10 relative overflow-hidden"
+          className="w-full max-w-2xl text-center glass-panel p-10 rounded-3xl border border-outline-variant/10 relative overflow-hidden"
         >
           <motion.div 
             animate={{ 
@@ -139,7 +139,7 @@ function ServiceCard({ module, icon, title, problem, architecture, tags, outcome
       viewport={{ once: true }}
       transition={{ delay: index * 0.1 }}
       whileHover={{ y: -10, boxShadow: "0 20px 40px rgba(var(--primary), 0.1)" }}
-      className="group relative p-8 rounded-full bg-surface-container-low border border-outline-variant/10 hover:border-primary/30 transition-all duration-500"
+      className="group relative p-8 rounded-3xl bg-surface-container-low border border-outline-variant/10 hover:border-primary/30 transition-all duration-500"
     >
       <div className="mb-8 flex items-start justify-between">
         <motion.div 

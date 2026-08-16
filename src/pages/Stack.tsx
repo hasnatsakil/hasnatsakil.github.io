@@ -121,9 +121,8 @@ export default function Stack() {
             >
               <img
                 alt="Abstract 3D neural network representation"
-                className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAl-KD-HzgPtUbXOejwUnoDx_IPLa-k1C2B8YND22DsKQTDK2-zMNbYhLq_7p7t0CebmcuopRSl3W08c5uTNHUMh-6S6jT3gImhxjye-lwPOMWfAzhuA4nR2N5FLe3stu0IHFiiLlKpD4_E-qO-NHhKXs1bVoW2G4WrjBvFiqJNU4N2WhZ1XNJS95zaIjOlsBWctyAUkSm6lplXhc6IBZiGiIS2EshKpuf8zpSOl_SHdJeeVWhP_biFisLaY4rWv8HfXbTktC1QcIY"
-                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
+                src="/images/ai_dashboard.png"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent"></div>
               <div className="absolute bottom-6 left-6 flex items-center space-x-2">
@@ -174,12 +173,12 @@ export default function Stack() {
         <div className="relative z-10">
           <h2 className="font-headline text-4xl md:text-6xl font-extrabold mb-8 tracking-tighter">Want me to use this stack for your project?</h2>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <button className="w-full sm:w-auto px-12 py-5 bg-gradient-to-r from-primary to-secondary text-on-primary-fixed font-headline font-black text-lg rounded-xl hover:scale-105 transition-transform shadow-lg shadow-secondary/20">
+            <a href="#/contact" className="w-full sm:w-auto px-12 py-5 bg-gradient-to-r from-primary to-secondary text-on-primary-fixed font-headline font-black text-lg rounded-xl hover:scale-105 transition-transform shadow-lg shadow-secondary/20 flex items-center justify-center">
               Hire Me
-            </button>
-            <button className="w-full sm:w-auto px-12 py-5 bg-surface-container-lowest border border-outline-variant/15 text-on-surface font-headline font-bold text-lg rounded-xl hover:bg-surface-bright transition-colors">
+            </a>
+            <a href="#/projects" className="w-full sm:w-auto px-12 py-5 bg-surface-container-lowest border border-outline-variant/15 text-on-surface font-headline font-bold text-lg rounded-xl hover:bg-surface-bright transition-colors flex items-center justify-center">
               View Projects
-            </button>
+            </a>
           </div>
         </div>
       </section>

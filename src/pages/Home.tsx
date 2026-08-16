@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
+import SystemProcessingGraphic from "../components/SystemProcessingGraphic";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -92,39 +93,7 @@ export default function Home() {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
           className="relative hidden md:block"
         >
-          <div className="glass-card p-4 rounded-2xl relative z-10 overflow-hidden aspect-square flex items-center justify-center">
-            <img
-              alt="Architecture Visual"
-              className="w-full h-full object-cover rounded-xl opacity-80"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhvipOVcTzcOtOFhxZopqqzXtS3Jl9UzWAmakjh1Yyt35dztJ-PHWHOtRjH_FZMjZDTTaQCQLwVpTE_bSDZ2JKtwQC1PXRXQdSUMgp_Rmt4cWR6CKDl1BnfIKsw3XjTtduEjbM5mSn6l2PKbXMrprx2X5uUz9zqgpI8CdpPICQktYYCIYHpQihkbkH-Jf5s4LTiAdwZr1Bi5Lj2pNHwKuyhT_yAb2k8KPEHrnRbzR-lXyexbyOdSbD0lcTIxbIwo_jyDzzWhDhATw"
-              referrerPolicy="no-referrer"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent opacity-60"></div>
-            <div className="absolute bottom-6 left-6 right-6 p-4 glass-card rounded-xl">
-              <div className="flex items-center gap-3 mb-2">
-                <Terminal className="w-4 h-4 text-secondary" />
-                <span className="font-label text-xs uppercase tracking-widest text-on-surface-variant">
-                  System Status
-                </span>
-              </div>
-              <div className="h-1 w-full bg-outline-variant/20 rounded-full overflow-hidden">
-                <motion.div 
-                  initial={{ width: 0 }}
-                  animate={{ width: "75%" }}
-                  transition={{ duration: 1.5, delay: 1, ease: "easeInOut" }}
-                  className="h-full bg-secondary"
-                ></motion.div>
-              </div>
-            </div>
-          </div>
-          {/* Decorative Element */}
-          <motion.div 
-            animate={{ rotate: 360 }}
-            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-            className="absolute -top-10 -right-10 w-40 h-40 border border-secondary/20 rounded-full flex items-center justify-center"
-          >
-            <div className="w-32 h-32 border border-primary/20 rounded-full"></div>
-          </motion.div>
+          <SystemProcessingGraphic />
         </motion.div>
       </section>
 
@@ -250,11 +219,11 @@ export default function Home() {
             <ProjectCard
               title="Visionary AI Dash"
               category="AI SaaS"
-              year="2023"
+              year="2024"
               problem="Real-time processing lag in massive image datasets for enterprise clients."
               solution="Implemented a distributed FastAPI backend with Azure Kubernetes Service."
               result="40% reduction in latency and 2x higher throughput."
-              image="https://lh3.googleusercontent.com/aida-public/AB6AXuB8yf_KzEfuBhm66qHWgpItYhC1N7dlSrXl9Q-Ue5WwVyVq3dB8bDWwxplh4sQnYF1mqWyhCixY-yQ1ss7ufpXKNFdJ-H9kQv69vjBqE4IH-qWKsmKJmWnyMiU3phEQb5wioP0A7IqJQfc5cRJs9Vn_S4x5ignmHY_yiGo_yOQV2MemFW2fZaFDVjjslctlk9WKaHzvRObrJ50sYJWH2M0gkDw1BK3up_66GJswECbSoD3h0aI6L3bHc_vZxNom6dzdc4PgYD1ECX4"
+              image="/images/ai_dashboard.png"
               index={0}
             />
             <ProjectCard
@@ -264,7 +233,7 @@ export default function Home() {
               problem="Manual deployment bottlenecks causing significant downtime for e-commerce."
               solution="Built automated CI/CD pipelines using GitHub Actions and Docker."
               result="Zero-downtime deployments and 99.9% uptime achieved."
-              image="https://lh3.googleusercontent.com/aida-public/AB6AXuARtWZX5Pu80_eqKIgPDs8p-h5uSDQL4xv3ZkE8tBeByqLWeG_uGk-argBfPDKNnfUBghXS9OvutVARL9WkRu0QfKUPUhaUsPOBj5EgzZibEP0bNvwSi7Bo_ck7LthPpou3XJ6Qbv85degLKMNcUNQobN79Tlp0kqgo64B6a6FCLJPezTNf62hiAXO5bK7OJW7Qr7qZ__5YnzFxUPA2pgwhBPhsifVAg2yeFV_bIj2GsrxvBQbm-edWSapmwBe09J1Dat35GMD_2Ss"
+              image="/images/cloud_infrastructure.png"
               index={1}
             />
           </div>

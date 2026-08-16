@@ -1,76 +1,102 @@
-# Hasnat Sakil - Personal Portfolio
+# Abul Hasnat Sakil — Personal Portfolio Website
 
-Welcome to my personal portfolio website! This is a showcase of my work, skills, and experiences as a developer. Built with modern web technologies, this site serves as a digital resume and a platform to share my projects and thoughts.
+[![Live Portfolio](https://img.shields.io/badge/Live_Site-hasnatsakil.github.io-blue?style=for-the-badge&logo=github)](https://hasnatsakil.github.io)
+[![Tech Stack](https://img.shields.io/badge/Stack-React%20%7C%20TypeScript%20%7C%20Vite%20%7C%20Tailwind-080e18?style=for-the-badge&logo=react)](https://react.dev)
+[![Gemini AI](https://img.shields.io/badge/AI-Gemini%20Portfolio%20Assistant-85adff?style=for-the-badge&logo=google)](https://ai.google.dev)
 
-## 🌟 Features
+Welcome to my personal portfolio repository! Built with React 19, TypeScript, Vite, Tailwind CSS, and Framer Motion, this site showcases my work, research, skills, and projects as a **Full Stack AI & DevOps Engineer**.
 
-- **Responsive Design**: Optimized for all devices, from mobile phones to desktops.
-- **Interactive Sections**: Explore my about me, skills, projects, services, and contact information.
-- **Dynamic Content**: Engaging animations and smooth transitions for a better user experience.
-- **SEO Friendly**: Structured for search engines to easily index my content.
-- **Fast Loading**: Built with performance in mind using Vite for quick builds and loads.
+---
+
+## 🌟 Key Features
+
+* **Modern Dark Glassmorphism Aesthetic**: Custom-curated color palette (`#080e18` dark background, `#85adff` & `#53ddfc` cyber-glow accents, glassmorphic backdrop filters).
+* **Interactive 3D System Thinking Graphic**: Dynamic SVG/Canvas animated matrix rendering live 3D microservice pipelines, moving data particles, and real-time processing telemetry metrics.
+* **Gemini AI Portfolio Assistant**: Integrated floating AI Chatbot widget powered by `@google/genai` allowing visitors to ask questions about my tech stack, experience, projects, and hiring availability.
+* **Real Contact Form Delivery**: Web3Forms client-side integration delivering user inquiries directly to `abulhasnatsakil.cu@gmail.com` with real-time submit loading states and success notifications.
+* **Centralized Configuration**: All site metadata, bio, social profile links, project matrices, and skill definitions are centralized in `src/config/site.ts` for effortless maintenance.
+* **Responsive & Accessible**: Optimized across all viewports with smooth route scroll-reset (`<ScrollToTop />`) and SEO OpenGraph tags.
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React, TypeScript
-- **Styling**: CSS (with custom styles)
-- **Build Tool**: Vite
-- **Deployment**: GitHub Pages
-- **Version Control**: Git
+* **Frontend Framework**: React 19, TypeScript
+* **Styling & UI**: Tailwind CSS v4, Motion (Framer Motion), Lucide React
+* **AI Integration**: Google GenAI SDK (`@google/genai`)
+* **Build Tool**: Vite 6
+* **Router**: React Router 7 (`HashRouter` for GitHub Pages compatibility)
+* **Form Delivery**: Web3Forms API
+* **Deployment**: GitHub Pages
+
+---
 
 ## 🚀 Getting Started
 
-To run this project locally on your machine, follow these steps:
-
 ### Prerequisites
 
-- Node.js (version 16 or higher)
-- npm or yarn
+- **Node.js** (v18 or higher recommended)
+- **npm** or **yarn**
 
-### Installation
+### Installation & Setup
 
-1. Clone the repository:
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/hasnatsakil/hasnatsakil.github.io.git
-   ```
-
-2. Navigate to the project directory:
-   ```bash
    cd hasnatsakil.github.io
    ```
 
-3. Install dependencies:
+2. **Install dependencies**:
    ```bash
    npm install
    ```
 
-4. Start the development server:
+3. **Configure Environment Variables**:
+   Create a `.env` file in the root directory (based on `.env.example`):
+   ```env
+   VITE_WEB3FORMS_KEY="b02721a4-c07d-4711-81cc-5e3f9a481658"
+   GEMINI_API_KEY="YOUR_GEMINI_API_KEY_OPTIONAL"
+   ```
+
+4. **Start local development server**:
    ```bash
    npm run dev
    ```
 
-5. Open your browser and visit `http://localhost:5173` to view the site.
+5. Open your browser and navigate to `http://localhost:3000` to view the site live.
 
-## 📦 Build for Production
+---
 
-To build the project for production:
+## 📦 Build & Linting Commands
 
-```bash
-npm run build
-```
+* **Linting / Type Check**:
+  ```bash
+  npm run lint
+  ```
+* **Production Build**:
+  ```bash
+  npm run build
+  ```
+* **Preview Production Build Locally**:
+  ```bash
+  npm run preview
+  ```
 
-This will generate optimized files in the `dist` folder, ready for deployment.
+---
 
-## 🌐 Deployment
+## 🌐 Deployment to GitHub Pages
 
-This site is automatically deployed to GitHub Pages. Any push to the `main` branch triggers a deployment. You can view the live site at [https://hasnatsakil.github.io](https://hasnatsakil.github.io).
+This website is configured for automatic deployment to GitHub Pages. Pushing changes to the `main` branch triggers automatic build deployment.
 
-## 📞 Contact
+* **Live Site**: [https://hasnatsakil.github.io](https://hasnatsakil.github.io)
 
-Feel free to reach out if you'd like to collaborate or just say hello!
+---
 
-- **Email**: [your-email@example.com] (replace with actual email)
-- **LinkedIn**: [Your LinkedIn Profile]
-- **GitHub**: [https://github.com/hasnatsakil](https://github.com/hasnatsakil)
+## 📞 Connect & Collaborate
 
-Thank you for visiting my portfolio!
+* **Email**: [abulhasnatsakil.cu@gmail.com](mailto:abulhasnatsakil.cu@gmail.com)
+* **LinkedIn**: [Abul Hasnat Sakil](https://www.linkedin.com/in/abul-hasnat-sakil-568618155/)
+* **Fiverr**: [@docxt112](https://www.fiverr.com/docxt112)
+* **GitHub**: [@hasnatsakil](https://github.com/hasnatsakil)
+
+Thank you for visiting!

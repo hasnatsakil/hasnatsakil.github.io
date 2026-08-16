@@ -130,7 +130,7 @@ export default function Skills() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative z-10 rounded-full overflow-hidden p-12 text-center bg-surface-container-high border border-outline-variant/10 shadow-2xl">
+      <section className="relative z-10 rounded-3xl overflow-hidden p-12 text-center bg-surface-container-high border border-outline-variant/10 shadow-2xl">
         <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-secondary/10 pointer-events-none"></div>
         <h2 className="text-4xl md:text-5xl font-black tracking-tighter mb-6">Need These Skills in Your Project?</h2>
         <p className="text-on-surface-variant max-w-xl mx-auto mb-10 leading-relaxed">
@@ -139,13 +139,13 @@ export default function Skills() {
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a
             className="bg-gradient-to-r from-primary to-secondary text-on-primary-fixed px-10 py-4 rounded-full font-bold text-lg hover:shadow-[0_0_30px_rgba(83,221,252,0.3)] transition-all"
-            href="#"
+            href="#/contact"
           >
             Hire Me Now
           </a>
           <a
             className="bg-surface-container-highest border border-outline-variant/20 text-on-surface px-10 py-4 rounded-full font-bold text-lg hover:bg-surface-bright transition-all"
-            href="#"
+            href="#/projects"
           >
             View Projects
           </a>
@@ -169,7 +169,7 @@ function SkillCategory({ title, label, icon, skills, tags, color, index }: any) 
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.1 }}
-      className="glass-panel rounded-full p-8 group hover:bg-surface-bright transition-all duration-500"
+      className="glass-panel rounded-3xl p-8 group hover:bg-surface-bright transition-all duration-500"
     >
       <div className="flex justify-between items-start mb-10">
         <div>
@@ -215,7 +215,7 @@ function SkillCategoryAI({ title, label, icon, expertise, tags, color, index }: 
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.1 }}
-      className="glass-panel rounded-full p-8 group hover:bg-surface-bright transition-all duration-500"
+      className="glass-panel rounded-3xl p-8 group hover:bg-surface-bright transition-all duration-500"
     >
       <div className="flex justify-between items-start mb-10">
         <div>
@@ -257,7 +257,7 @@ function SkillCategoryDevOps({ title, label, icon, items, tags, color, index }: 
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.1 }}
-      className="glass-panel rounded-full p-8 group hover:bg-surface-bright transition-all duration-500"
+      className="glass-panel rounded-3xl p-8 group hover:bg-surface-bright transition-all duration-500"
     >
       <div className="flex justify-between items-start mb-10">
         <div>

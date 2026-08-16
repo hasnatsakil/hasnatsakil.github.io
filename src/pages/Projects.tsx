@@ -2,41 +2,19 @@ import React, { useState } from "react";
 import { Eye, ArrowRight, BarChart3, Shield, Terminal, Filter } from "lucide-react";
 import { motion } from "motion/react";
 
+import { siteConfig } from "../config/site";
+
 const projects = [
   {
-    id: 1,
-    title: "Visionary AI Dash",
-    category: "AI/ML",
-    problem: "Inefficient image processing causing bottlenecks in data pipelines.",
-    solution: "Distributed FastAPI backend orchestration on Kubernetes clusters.",
-    result: "40% Latency Reduction",
-    tags: ["Next.js", "FastAPI", "Azure", "K8s"],
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAwF20gVLaEpVB2ENez1-00xGaVUVAdw1tOpl1A44pVLkt-4b_iudnacNgMjVOBVZV02vWbZWtWs51TfQtmTxkjpuZC8CTzgbdP7ZqkBdFM_WOKtcoijJypRjm4igabP5HZYJTl5dja8PQbrtkXz5rYJQolla_HpTDA6LqWlOK9taRUSrHQ_LblirQQPpikDNup-WLmf9PDibwsay9VKm-H54HBcua_K4QObXbYCXhZgQSXB-1Jzdu29zWO3oJhFk4hD7MRfXES0gs",
-    color: "primary",
+    ...siteConfig.projects[0],
     icon: <Eye className="w-4 h-4 mr-2" />
   },
   {
-    id: 2,
-    title: "Auto-Scale Framework",
-    category: "DevOps/Cloud",
-    problem: "Manual deployment bottlenecks leading to significant downtime.",
-    solution: "KEDA-based event-driven autoscaling with Terraform IAC.",
-    result: "99.99% Guaranteed Uptime",
-    tags: ["Docker", "Kubernetes", "Azure", "Terraform"],
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCzsvE1w_G2q-7ZPZ1_COxomYl3gbOHvx6_QAjwofXJVo9mTglQur7NDcjiXsVSMviI1TTF8vEbd42mNrVt4-FyxuXId2wtah6tGpynNYftcQhdWzEbrXaNPRc87YN_YI5DtVn00T0YecwIxeG5AMoz8mBbekLTQ-maaiLo8lpIshUygD01ANRaVm1SfwmFZU_Pilf86JndRTgrlqeOD_9kAAJoiC5isMqB1l5hzbjI7HsRh4MJyk2tJdEmcaI4coZc-JmVO9hwh-o",
-    color: "secondary",
+    ...siteConfig.projects[1],
     icon: <BarChart3 className="w-4 h-4 mr-2" />
   },
   {
-    id: 3,
-    title: "Secure Wallet API",
-    category: "Web/Full Stack",
-    problem: "Critical financial data security vulnerabilities in legacy system.",
-    solution: "OAuth2.0 + JWT with Redis-backed session management.",
-    result: "500k+ Daily API Calls",
-    tags: ["Node.js", "Redis", "PostgreSQL"],
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDcmt7brFyqIfs5GvojKqecaGPK8zJZtfiQs3I9rTAtxNAJtr4QJd6i7ouTavv39lXxE7WdPJwXXs8N_5VI5Vpb5fsSAiPF6tjeYwVV1na4Tnz5-BTe81QSBR-3BxHkok5zA-4bIwd0MIWvHktx74f6S7K-8i9eEwjdRUdCVnsxWfPSeuWcdZ14M5SYl5gJXVXtKGNmrttTWciSSYCQnPP7XKoEErlRLOZDzMGgCeAkBiVMjGyLJDdtPRlikzBfTL4Ob6Sbu-nyMWw",
-    color: "tertiary",
+    ...siteConfig.projects[2],
     icon: <Shield className="w-4 h-4 mr-2" />
   }
 ];
@@ -118,7 +96,7 @@ export default function Projects() {
   );
 }
 
-function ProjectCard({ title, category, problem, solution, result, tags, image, color, icon }: any) {
+function ProjectCard({ title, category, problem, solution, result, tags, image, color, icon, demoUrl, githubUrl }: any) {
   const borderClasses: Record<string, string> = {
     primary: "border-primary",
     secondary: "border-secondary",
@@ -178,12 +156,22 @@ function ProjectCard({ title, category, problem, solution, result, tags, image, 
           ))}
         </div>
         <div className="mt-auto grid grid-cols-2 gap-4">
-          <button className="bg-surface-bright hover:bg-surface-variant text-on-surface py-3 rounded-xl text-xs font-bold transition-all border border-outline-variant/15 flex items-center justify-center hover:scale-105 active:scale-95">
+          <a
+            href={demoUrl || siteConfig.socials.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-surface-bright hover:bg-surface-variant text-on-surface py-3 rounded-xl text-xs font-bold transition-all border border-outline-variant/15 flex items-center justify-center hover:scale-105 active:scale-95"
+          >
             {icon} Live Demo
-          </button>
-          <button className="bg-surface-container-highest hover:bg-surface-bright text-on-surface py-3 rounded-xl text-xs font-bold transition-all border border-outline-variant/15 flex items-center justify-center hover:scale-105 active:scale-95">
+          </a>
+          <a
+            href={githubUrl || siteConfig.socials.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-surface-container-highest hover:bg-surface-bright text-on-surface py-3 rounded-xl text-xs font-bold transition-all border border-outline-variant/15 flex items-center justify-center hover:scale-105 active:scale-95"
+          >
             Details <ArrowRight className="w-4 h-4 ml-2" />
-          </button>
+          </a>
         </div>
       </div>
     </motion.article>

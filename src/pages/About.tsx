@@ -91,7 +91,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             whileHover={{ y: -5 }}
-            className="md:col-span-2 p-10 rounded-full bg-surface-container-low border border-outline-variant/10 relative overflow-hidden group"
+            className="md:col-span-2 p-10 rounded-3xl bg-surface-container-low border border-outline-variant/10 relative overflow-hidden group"
           >
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -mr-20 -mt-20 group-hover:bg-primary/10 transition-colors"></div>
             <div className="relative z-10">
@@ -108,7 +108,7 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
             whileHover={{ y: -5 }}
-            className="p-8 rounded-full bg-surface-container-high border border-outline-variant/10 flex flex-col justify-between"
+            className="p-8 rounded-3xl bg-surface-container-high border border-outline-variant/10 flex flex-col justify-between"
           >
             <div>
               <Terminal className="w-8 h-8 text-secondary mb-4" />
