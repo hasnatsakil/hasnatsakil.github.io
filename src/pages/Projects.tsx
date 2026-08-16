@@ -119,15 +119,22 @@ function ProjectCard({ title, category, problem, solution, result, tags, image, 
       whileHover={{ y: -10 }}
       className="group bg-surface-container-low rounded-3xl overflow-hidden border border-outline-variant/15 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 flex flex-col"
     >
-      <div className="relative h-64 overflow-hidden">
+      <div className="relative h-64 overflow-hidden group">
         <img
           alt={title}
-          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-90"
           src={image}
-          referrerPolicy="no-referrer"
         />
+        {/* Animated Moving Data Scanline Overlay */}
+        <motion.div
+          animate={{ y: ["-100%", "100%"] }}
+          transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
+          className="absolute inset-0 bg-gradient-to-b from-transparent via-cyan-400/15 to-transparent pointer-events-none"
+        ></motion.div>
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
         <div className="absolute top-4 left-4">
-          <span className={`bg-surface-container-lowest/80 backdrop-blur-md ${textColorClasses[color]} px-3 py-1 rounded-lg text-[10px] font-label font-bold tracking-widest uppercase border border-outline-variant/15`}>
+          <span className={`bg-slate-950/80 backdrop-blur-md ${textColorClasses[color]} px-3 py-1 rounded-lg text-[10px] font-label font-bold tracking-widest uppercase border border-slate-800 flex items-center gap-1.5`}>
+            <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-ping"></span>
             {category}
           </span>
         </div>

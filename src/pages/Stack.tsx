@@ -1,6 +1,7 @@
 import React from "react";
 import { Monitor, Terminal, Layers, Palette, Zap, Server, Code, FlaskConical, HardDrive, Webhook, Cloud, LineChart, Rocket } from "lucide-react";
 import { motion } from "motion/react";
+import NeuralArchitectureGraphic from "../components/NeuralArchitectureGraphic";
 
 export default function Stack() {
   return (
@@ -117,18 +118,9 @@ export default function Stack() {
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="aspect-video bg-surface-container-high rounded-xl border border-outline-variant/15 overflow-hidden relative"
+              className="w-full h-full min-h-[300px]"
             >
-              <img
-                alt="Abstract 3D neural network representation"
-                className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
-                src="/images/ai_dashboard.png"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent"></div>
-              <div className="absolute bottom-6 left-6 flex items-center space-x-2">
-                <FlaskConical className="w-5 h-5 text-tertiary" />
-                <span className="font-label text-xs uppercase tracking-widest text-on-surface">Neural Architecture Visualization</span>
-              </div>
+              <NeuralArchitectureGraphic />
             </motion.div>
           </div>
         </motion.section>

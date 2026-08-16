@@ -484,8 +484,14 @@ function ProjectCard({ title, category, year, problem, solution, result, image, 
       transition={{ duration: 0.5, delay: index * 0.1 }}
       className="glass-card rounded-3xl overflow-hidden group"
     >
-      <div className="relative h-64 overflow-hidden">
-        <img alt={title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src={image} referrerPolicy="no-referrer" />
+      <div className="relative h-64 overflow-hidden group">
+        <img alt={title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90" src={image} />
+        {/* Animated Moving Data Scanline Overlay */}
+        <motion.div
+          animate={{ y: ["-100%", "100%"] }}
+          transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
+          className="absolute inset-0 bg-gradient-to-b from-transparent via-cyan-400/15 to-transparent pointer-events-none"
+        ></motion.div>
         <div className="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
       </div>
       <div className="p-8">
