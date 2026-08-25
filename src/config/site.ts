@@ -5,7 +5,7 @@ export const siteConfig = {
   description:
     "Engineering robust solutions at the intersection of Generative AI, Microservices, and Scalable Cloud Infrastructure.",
   email: "abulhasnatsakil.cu@gmail.com",
-  location: "Dhaka, Bangladesh / Remote Global",
+  location: "Kuala Lumpur, Malaysia / Remote Global",
   availability: "Available for new ventures & consulting",
   
   socials: {
